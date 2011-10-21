@@ -3,7 +3,7 @@ This is a mirror of http://www.vim.org/scripts/script.php?script_id=2960
 This plugin will allow you to reach a desired location on the visible screen by
 performing a sequence of bisections to the left, right, up, and down.  By default,
 these are performed using the <C-h>, <C-l>, <C-j>, and <C-k> commands, respectively.
-<C-n> cancels a bisect.
+<C-i> cancels a bisect.
 
 For example, suppose your cursor is above the desired location on the screen.  Call
 the BisectDown command, and your cursor will move halfway between its current
@@ -12,8 +12,8 @@ position.  Call the BisectUp command, and your cursor will move to halfway betwe
 its current position and its original position.  Repeat as necessary.  BisectLeft and
 BisectRight work analagously.  Horizontal and vertical commands can be interleaved.
 
-Works in normal and all visual modes. 
+Works in normal and all visual modes.
+
+Attempting to move past a boundary automatically triggers a new bisection.
 
 More information available here: http://github.com/mikezackles/Bisect
-
-Note that the github repo is slightly more up to date.  (Switching to visual mode cancels a bisect).  I swear I'll get around to updating the vimball soon.
